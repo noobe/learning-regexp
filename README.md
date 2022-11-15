@@ -25,3 +25,8 @@ const regex = /The/
 const regex = new RegExp(pattern [, flags])
 ```
 Once created, the `regex` object can be passed to the `match`, `search` and/or `replace` methods
+
+## Project Overview:
+01. Simple Regex using Javascript
+02. Flags in Regex
+03. Special Characters in RegExp
