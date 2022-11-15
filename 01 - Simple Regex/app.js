@@ -1,5 +1,5 @@
 const regex = /the/;
-const str = "the apple and the ball";
+const str = "they want the apple and the ball";
 console.log(regex.exec(str));
 console.log(regex.test(str));
 console.log(str.match(regex));
