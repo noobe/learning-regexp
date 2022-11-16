@@ -46,3 +46,22 @@ gives:
 Please get TEST apple, the ball and the bat
 ```
 Here, the flag i makes the search case-insensitive, hence it picks up the 1st occurance '`T`he' despite it being capital `T`
+
+## gi: Global + Case insensitve
+
+```js
+const regex3 = /the/gi;
+str = 'Please get The apple, the ball and the bat';
+
+console.log(str.match(regex3));
+console.log(str.search(regex3));
+console.log(str.replace(regex3, "TEST"));
+```
+gives:
+```js
+[ 'The', 'the', 'the' ]
+11
+Please get TEST apple, TEST ball and TEST bat
+```
+
+Here, we combine both the flags g and i and hence all occurances of the word 'the' irrespective of its case, is found and replaced.
